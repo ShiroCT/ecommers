@@ -1,6 +1,3 @@
-const titulo = document.getElementById("titulo")
-const slogan = document.getElementById("slogan")
-const footer = document.getElementById("footer")
 const container = document.getElementById("container")
 const inputSearch = document.querySelector("input#inputSearch")
 
@@ -23,13 +20,6 @@ async function cargarDatos() {
     }
 }
 cargarDatos()
-
-//Titulo y Texto generado
-titulo.innerText = "La Floreria de Moe";
-slogan.textContent = "💐Arme su pedido de flores siguiendo nuestra trabla de codigos💐"
-footer.innerHTML = "<p>🙎‍♂️ Estudiante: Christian Tulian</p><p>💻Comisión 34095 - Curso JavaScript</p>" 
-
-//
 
 function cargarProductos(array) {
     let contenido = ""
@@ -71,8 +61,8 @@ function activarClickBotones() {
         })
     })
 }
-
-function filtrarProductos() { //Aplicamos operador ternario
+//Aplicamos operador ternario
+function filtrarProductos() { 
     let resultado = productos.filter(producto => producto.nombre.toUpperCase().includes(inputSearch.value.toUpperCase().trim()))
         if (resultado.length > 0) {
             cargarProductos(resultado)
@@ -81,8 +71,8 @@ function filtrarProductos() { //Aplicamos operador ternario
             console.warn("No se han encontrado coincidencias.")
         }
 }
-
-inputSearch.addEventListener("search", ()=> { //Aplicamos operador ternario
+//Aplicamos operador ternario
+inputSearch.addEventListener("search", ()=> { 
     inputSearch.value.trim() !== "" ? filtrarProductos() : cargarProductos(productos)
 })
 

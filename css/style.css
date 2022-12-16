@@ -117,3 +117,20 @@ hr {
     text-align: center;
 }
 
+/*Tabla*/
+#tablehead {
+    padding: 10px;
+}
+
+thead tr {
+    background-color: rgb(32, 199, 82);
+    color: white;
+}
+
+#tablehead {
+    padding: 30px;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(253, 121, 231, 0.252) !important;
+}
