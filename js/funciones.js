@@ -1,8 +1,8 @@
 //Operador Logico       
 const carro = JSON.parse(localStorage.getItem("myCarro")) || []
 
-function retornoCard({id, imagen, nombre, precio}) {
-        return `<div class="card" id="card${id}">
+function retornoCard({ id, imagen, nombre, precio }) {
+    return `<div class="card" id="card${id}">
                     <div class="card-image">${imagen}</div>
                     <div class="card-name">${nombre}</div>
                     <div class="card-price">$ ${precio.toFixed(2)}</div>
@@ -13,7 +13,7 @@ function retornoCard({id, imagen, nombre, precio}) {
 }
 
 function retornoError() {
-        return `<div class="card-error">
+    return `<div class="card-error">
                     <h1> 🚨PROBLEMA DETECTADO🚨</h1>
                     <h3>No se han podido cargar los datos del FETCh</h3>
                     <h3>Intenta nuevamente más tarde</h3>
@@ -21,7 +21,7 @@ function retornoError() {
 }
 
 function retornoTablaCarro(flor) {
-        return `<tr>
+    return `<tr>
                     <td class="centrar img-xx-large">${flor.imagen}</td>
                     <td>${flor.nombre}</td>
                     <td>${flor.precio}</td>
