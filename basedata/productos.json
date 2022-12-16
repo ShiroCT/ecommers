@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "imagen": "🌹",
+        "nombre": "Rosa",
+        "precio": 100
+    },
+    {
+        "id": 2,
+        "imagen": "🌻",
+        "nombre": "Girasol",
+        "precio": 50
+    },
+    {
+        "id": 3,
+        "imagen": "🌷",
+        "nombre": "Tuliapan",
+        "precio": 70
+    },
+    {
+        "id": 4,
+        "imagen": "🌼",
+        "nombre": "Margarita",
+        "precio": 20
+    },
+    {
+        "id": 5,
+        "imagen": "🌺",
+        "nombre": "Jazmin",
+        "precio": 60
+    },
+    {
+        "id": 6,
+        "imagen": "🌸",
+        "nombre": "Sakura",
+        "precio": 80
+    },
+    {
+        "id": 7,
+        "imagen": "🌾",
+        "nombre": "Campana",
+        "precio": 30
+    },
+    {
+        "id": 8,
+        "imagen": "🌿",
+        "nombre": "Parra de Jade",
+        "precio": 200
+    }   
+]
