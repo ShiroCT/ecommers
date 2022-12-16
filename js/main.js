@@ -4,19 +4,8 @@ const footer = document.getElementById("footer")
 const container = document.getElementById("container")
 const inputSearch = document.querySelector("input#inputSearch")
 
-const imgBasket = document.getElementById("imgBasket")
-
 const URL = 'basedata/productos.json'
 const productos = []
-
-// Hosting para gifhub.io
-// Consultar en consola "hosting.includes(github.oi)" captuar la URL con esta linea
-const hosting = location.href
-if(hosting.includes("github.io")){
-
-}else{
-    // cargar la funcion asincronica
-}
 
 //Peticion Asyncronica
 async function cargarDatos() {
@@ -34,16 +23,6 @@ async function cargarDatos() {
     }
 }
 cargarDatos()
-/*
-// Paticion Promesas
-fetch(URL) //PIDO LOS DATOS AL SERVIDOR, O ARCHIVO .JSON
-    .then((response)=> data = response.json()) //RECIBO LOS DATOS EN FORMATO TEXTO, Y LOS CONVIERTO EN ARRAY
-    .then((data) => productos.push(...data)) //INCORPORO EL ARRAY A MI ARRAY DE OBJETOS ORIGINAL
-    .then(() => cargarProductos(productos)) //CARGO LOS PRODUCTOS O ARRAY EN PANTALLA
-    .then(()=> activarClickBotones()) //ACTIVO EL CLICK EN LOS BOTONES
-    .catch(error => container.innerHTML = retornoError()) //CONTROLO CUALQUIER POSIBLE ERROR.
-*/
-
 
 //Titulo y Texto generado
 titulo.innerText = "La Floreria de Moe";
@@ -107,27 +86,14 @@ inputSearch.addEventListener("search", ()=> { //Aplicamos operador ternario
     inputSearch.value.trim() !== "" ? filtrarProductos() : cargarProductos(productos)
 })
 
-//Ventanitas verdes---Toastify JS
-/*const toast = (text, bgcolor)=> {
-    Toastify({
-        text: text,
-        duration: 2500,
-        close: true,
-        gravity: "top", 
-        position: "right", 
-        stopOnFocus: true, 
-        style: { background: bgcolor || 'CornFlowerBlue', fontSize: '24px'}
-      }).showToast();
-}*/
-
-
-
-//Producto en carro 
-imgBasket.src = "images/basket.png"
-
-imgBasket.addEventListener("mousemove", ()=> {
+//Ver Producto del carro en el boton 
+let botonBasket = document.getElementById("botonBasket")
+botonBasket.addEventListener("mousemove", ()=> {
     let totalProductos = carro.length
-        imgBasket.title = `${totalProductos} productos en el carrito`
+        botonBasket.title = `${totalProductos} productos en el carrito`
 })
+
+
+
 
 

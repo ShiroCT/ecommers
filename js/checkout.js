@@ -1,3 +1,9 @@
+//Ver Producto del carro en el boton 
+let botonBuy = document.getElementById("botonBuy")
+botonBuy.addEventListener("mousemove", ()=> {
+        botonBuy.title = `Volver a la pagina de compras`
+})
+
 function recuperarCarro() {
     let tablaHTML = ""
     const tbody = document.querySelector("tbody")
@@ -22,10 +28,6 @@ function activarBotonesDelete() {
                 recuperarCarro()
                 activarBotonesDelete()
             }
-            //buscar usando button.id el producto en el array carrito.
-            //hay que utilizar findIndex() porque necesitamos el índice del producto
-            //luego con el método splice(), elimino el índice recuperado del carrito.
-            //debemos declarar carrito de forma GLOBAL.
         })
     })
 }

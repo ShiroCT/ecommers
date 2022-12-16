@@ -12,6 +12,7 @@ footer {
     font-weight: 700;
     padding: 10px;
     border-radius: 20px;
+    bottom: 0;
 }
 
 hr {
@@ -27,38 +28,9 @@ hr {
     background-color: aliceblue;
 }
 
-
-/*.button-delete {
-    font-size: larger;
-}*/
-
 .button-delete:hover {
     background-color: gray !important;
 }
-
-/*.button-small {
-    font-size: .8rem;
-    height: 2.8rem;
-    line-height: 2.8rem;
-    padding: 0 1.5rem;
-}*/
-/*
-body {
-    padding: 20px;
-}
-
-h1, h2, h3, h4 {
-    font-weight: 500;
-}
-
-p, span, strong, code {
-    font-size: larger;
-}
-
-em {
-    font-size: medium;
-}
-*/
 
 .container {
     gap: 50px;
@@ -127,21 +99,6 @@ em {
     background-color: aquamarine;
 }
 
-/*.card .card-button .disabled {
-    background-color: lightgray !important;
-    color: whitesmoke !important;
-}
-
-.card .card-button button:active {
-    border-radius: 10px;
-    background: magenta !important;
-    color: white !important;
-}/*
-
-/*.sin-stock {
-    filter: grayscale(100%) opacity(30%);
-}*/
-
 .card-error {
     box-shadow: 5px 5px 20px rgba(239, 4, 4, 0.147);
     border: 5px solid red;
@@ -155,124 +112,8 @@ em {
     text-align: center;
 }
 
-/*.formulario {
-    padding: 40px;
-    border-radius: 10px;
-    background-color: rgba(90, 0, 139, 0.373);
-    box-shadow: 5px 10px 40px lightgray;
-}*/
-
-/*.btn-checkout {
-    background-color: rgba(139, 0, 139, 0.175) !important;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-top: 10px;
-    display: inline;
-    padding: 10px;
-    float: right;
-    height: 70px;
-    width: 70px;
-}
-
-.btn-checkout img {
-    width: 100px;
-}
-
-.btn-checkout:hover {
-    box-shadow: 4px 4px 16px rgba(128, 128, 128, 0.476);
-    transition: 0.17s ease-in;
-}
-
-.btn-checkout:active {
-    transition: 0.3s ease-out;
-    filter: grayscale(100%)
-}
-*/
-/*.ocultar {
-    display: none !important;
-}
-
-thead tr {
-    background-color: darkmagenta;
-    color: white;
-}
-
-#tablehead {
-    padding: 10px;
-}
-
-tbody tr:nth-child(even) {
-    background: rgba(173, 216, 230, 0.252) !important;
-}
-
-.img-xx-large {
-    font-size: xx-large;
-}
-
-.center {
-    text-align: center;
-}*/
 
 .centrar {
     text-align: center;
 }
 
-/*#btnComprar:hover {
-    background-color: darkviolet;
-}
-
-#btnComprar:active {
-    background-color: black;
-}
-
-#inputSearch {
-    font-size: larger;
-}*/
- 
-/*  CONTROLO MEDIA SCREENS Y ELEMENTOS EN PANTALLA
-    ESTO APLICA SOLAMENTE A LOS ELEMENTOS DE CHECKOUT.HTML */
-/*
-@media screen and (width <= 420px) {
-
-    .form-checkout {
-        padding: 8px;
-        width: 100%;
-    }
-
-    div.form-checkout p {
-        font-size: 14px;
-        font-weight: 700;
-    }
-
-    table {
-        margin: 0 auto;
-        width: 100% !important;
-        margin-bottom: 60px;
-    }
-}
-
-@media screen and (width <= 767px) {
-    .form-checkout {
-        padding: 10px;
-        width: 100%;
-    }
-
-    table {
-        margin: 0 auto;
-        width: 100%;
-        margin-bottom: 60px;
-    }
-}
-
-@media screen and (width >= 768px) {
-    div.form-checkout {
-        padding: 30px;
-        max-width: 600px;
-    }
-
-    table {
-        margin: 0 auto;
-        max-width: 600px;
-        margin-bottom: 80px;
-    }
-}*/
